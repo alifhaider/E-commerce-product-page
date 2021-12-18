@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header">
+          <div class="header__left">
+            <div class="burger__menu">
+              <div class="dash space"></div>
+              <div class="dash space"></div>
+              <div class="dash"></div>
+            </div>
+            <p class="header__logo">sneakers</p>
+            <ul class="header__nav__menu">
+              <li class="header__nav__menu__item">Collections</li>
+              <li class="header__nav__menu__item">Men</li>
+              <li class="header__nav__menu__item">Women</li>
+              <li class="header__nav__menu__item">About</li>
+              <li class="header__nav__menu__item">Contact</li>
+            </ul>
+          </div>
+          <div class="header__right">
+            <div class="header__cart__container">
+              <img
+                class="header__cart"
+                src="./images/icon-cart.svg"
+                alt="cart"
+              />
+              <p class="header__cart__amount">1</p>
+            </div>
+
+            <img
+              class="header__avatar"
+              src="./images/image-avatar.png"
+              alt="avatar"
+            />
+          </div>
+        </div>
+        <div class="navbar__mobile">
+          <img
+            class="navbar__mobile__close__icon"
+            src="./images/icon-close.svg"
+            alt="close"
+          />
+          <ul class="navabr__mobile__menu">
+            <li class="mobile__menu__item">Collections</li>
+            <li class="mobile__menu__item">Men</li>
+            <li class="mobile__menu__item">Women</li>
+            <li class="mobile__menu__item">About</li>
+            <li class="mobile__menu__item">Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="mainContainer">
+      <section class="gallery">
+        <div class="gallery__box">
+          <div class="gallery__left">
+            <img
+              class="gallery__leftArrow"
+              src="./images/icon-previous.svg"
+              alt="previous"
+            />
+          </div>
+          <div class="gallery__center">
+            <img
+              class="gallery__product__image gallery__product__image__active"
+              src="./images/image-product-1.jpg"
+              alt="product"
+            />
+          </div>
+          <div class="gallery__right">
+            <img
+              class="gallery__rightArrow"
+              src="./images/icon-next.svg"
+              alt="next"
+            />
+          </div>
+        </div>
+        <div class="desktop__gallery">
+          <div class="image__container">
+            <div class="desktopMainImageContainer">
+              <img class="desktopMainImage" src="./images/image-product-1.jpg" alt="product1">
+            </div>
+            <div class="thumbnailContainer">
+              <img class="desktopThumbnailImage" src="./images/image-product-1-thumbnail.jpg" alt="product1">
+              <img class="desktopThumbnailImage" src="./images/image-product-2-thumbnail.jpg" alt="product2">
+              <img class="desktopThumbnailImage" src="./images/image-product-3-thumbnail.jpg" alt="product3">
+              <img class="desktopThumbnailImage" src="./images/image-product-4-thumbnail.jpg" alt="product4">
+            </div>
+          </div>
+        </div>
+        <div class="gallery__cart__container ">
+          <div class="cart__container__top">
+            <h4 class="gallery__cart__container__title">Cart</h2>
+          </div>
+          <div class="cart__container__bottom">
+            <p class="cart__products__list">Your cart is empty</p>
+            <!-- <div class="cart__product__container">
+              <img class="cart__product__thumb" src="./images/image-product-1-thumbnail.jpg" alt="product1">
+              <div class="cart__product__center">
+                <p class="cart__product__title">Fall Limited Edition Sneakers</p>
+                <p class="cart__product__invoice">$125.00 x 3<span class="cart__product__total">$375.00</span></p>
+                
+              </div>
+                <img src="./images/icon-delete.svg" alt="delete">
+              
+            </div> -->
+          </div>
+          
+        </div>
+      </section>
+              
+      <section>
+        <div class="container">
+          <h3 class="company__name">Sneaker Company</h3>
+          <h2 class="product__title">Fall Limited Edition Sneakers</h2>
+          <p class="product__description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price__container">
+            <div class="price__container__left">
+              <p class="current__price">$<span class="current__price__value">125.00</span></p>
+              <p class="price__off">50%</p>
+            </div>
+            <div class="price__container__right">
+              <p class="previous__price">$250.00</p>
+            </div>
+          </div>
+          <div class="cart__wrapper">
+            <div class="cart__button__container">
+              <div class="cart__icon__box cart__icon__box__minus">
+                <img
+                  class="cart__icon__minus"
+                  src="./images/icon-minus.svg"
+                  alt="minus"
+                />
+              </div>
+  
+              <p class="cart__amount">0</p>
+              <div class="cart__icon__box cart__icon__box__plus">
+                <img
+                  class="cart__icon__plus"
+                  src="./images/icon-plus.svg"
+                  alt="plus"
+                />
+              </div>
+            </div>
+            <div class="add__cart__container">
+              <svg
+                class="cart__container__svg"
+                width="22"
+                height="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="cart__container__path"
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <button class="cart__container__button">Add to cart</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://itsalif.netlify.app">Alif Haider</a>.
+    </div>
+
+    <script src="./App.js"></script>
+  </body>
+</html>
