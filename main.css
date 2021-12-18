@@ -84,6 +84,7 @@ nav {
   font-weight: 700;
   height: 100%;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .header__right {
@@ -97,6 +98,7 @@ nav {
   display: flex;
   position: relative;
   margin-right: 0.8rem;
+  cursor: pointer;
 }
 
 .header__cart {
@@ -142,6 +144,7 @@ nav {
 .navbar__mobile__close__icon {
   height: 14px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .mobile__menu__item {
@@ -149,6 +152,7 @@ nav {
   font-size: 14px;
   margin-bottom: 15px;
   list-style: none;
+  cursor: pointer;
 }
 
 .gallery {
@@ -418,7 +422,7 @@ nav {
 @media only screen and (min-width: 1440px) {
   header {
     height: 100px;
-    padding: 0 120px;
+    padding: 0 15%;
     margin-bottom: 60px;
   }
 
@@ -431,7 +435,17 @@ nav {
     margin-top: 20px;
     min-height: 800px;
     display: flex;
-    padding: 0 120px;
+    padding: 0 16%;
+  }
+
+  .cart__product__container {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .cart__product__center {
+    margin-left: -25%;
   }
 
   .gallery__box {
@@ -476,7 +490,7 @@ nav {
   }
   .thumbnailContainer {
     display: flex;
-    width: 100%;
+    width: 700px;
     justify-content: space-between;
   }
 
@@ -484,6 +498,11 @@ nav {
     height: 80px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+  }
+
+  .desktopThumbnailImage:hover {
+    box-shadow: hsl(0, 0%, 75%) 0px 48px 100px 0px;
   }
 
   .company__name {
