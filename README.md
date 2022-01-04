@@ -1,5 +1,5 @@
 # Frontend Mentor - E-commerce product page
-[LiveSiteLink](https://ecommerce-product-challenge.netlify.app/)
+[LiveSiteLink](https://ecommerce-product-challenge.netlify.app/) : https://ecommerce-product-challenge.netlify.app/
 
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
